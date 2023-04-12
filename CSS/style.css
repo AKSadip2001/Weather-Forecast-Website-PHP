@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 15+, Chrome 26+, Opera 15+, Safari 7+ */
+}
+.container{
+    background-color: whitesmoke;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 15px;
+}
+
+.left{
+    background-image: url(../Picture/side_pic.png);
+    background-position: center;
+    border-radius: 25px;
+}
+
+.today, .daily{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 15px;
+}
+.today-right{
+    border-left: 1px solid black;
+}
+
+.day{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav{
+    color: white;
+}
+
+.location{
+    background-color: rgba(158, 158, 158, 0.35);
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.location h6{
+    margin-bottom: 0;
+}
+
+.search{
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search h1{
+    color: #1a3039;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+
+@media (max-width: 990px){
+    .main{
+        flex-direction: column;
+    }
+}
